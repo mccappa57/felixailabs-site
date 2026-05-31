@@ -1,0 +1,8 @@
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Felix AI Labs">
+  
+  <circle cx="20" cy="20" r="13" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5"></circle>
+  <circle cx="20" cy="20" r="5" fill="#f59e0b"></circle>
+  
+  <text x="44" y="27" font-family="Inter, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.02em" fill="#f9fafb">FELIX</text>
+  <text x="118" y="27" font-family="Inter, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.02em" fill="#6b7280">AI</text>
+</svg>

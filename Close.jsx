@@ -123,7 +123,7 @@ function Footer() {
     <footer style={{ borderTop: '1px solid var(--border)', background: 'var(--bg-1)' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '56px 32px 40px', display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr', gap: 40 }} className="footer-grid">
         <div>
-          <img src="../../assets/logo-wordmark.svg" alt="Felix AI Labs" style={{ height: 32 }} />
+          <img src="assets/logo-wordmark.svg" alt="Felix AI Labs" style={{ height: 32 }} />
           <p className="felix-small" style={{ marginTop: 16, maxWidth: 280 }}>Not automation. A version of you that never sleeps. Custom AI operators, deployed on hardware you own.</p>
           <div style={{ marginTop: 18 }}><Button variant="primary" size="sm" icon="arrow-right">{CTA_LABEL}</Button></div>
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginTop: 18 }} className="felix-label"><LiveDot /><span style={{ color: 'var(--green-300)' }}>All systems operational</span></span>

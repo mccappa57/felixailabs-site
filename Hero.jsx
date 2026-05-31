@@ -10,7 +10,7 @@ function Nav({ onNav }) {
     <header style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(5,6,15,.62)', backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)', borderBottom: '1px solid var(--border)' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '15px 32px', display: 'flex', alignItems: 'center', gap: 22 }}>
         <a href="#top" onClick={(e) => { e.preventDefault(); onNav('top'); }} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <img src="../../assets/logo-mark.svg" alt="" style={{ height: 30 }} />
+          <img src="assets/logo-mark.svg" alt="" style={{ height: 30 }} />
           <span style={{ fontWeight: 800, fontSize: 19, letterSpacing: '-0.02em', color: 'var(--fg)', whiteSpace: 'nowrap' }}>Felix<span style={{ color: 'var(--fg-muted)' }}> AI</span></span>
         </a>
         <nav style={{ display: 'flex', gap: 2, marginLeft: 12 }} className="nav-links">
@@ -70,7 +70,7 @@ function AgentGraph() {
       <div style={{ position: 'absolute', left: C, top: C, transform: 'translate(-50%,-50%)' }}>
         <span className="core-ring" /><span className="core-ring" style={{ animationDelay: '1.3s' }} />
         <div className="graph-core">
-          <img src="../../assets/logo-mark.svg" alt="" style={{ width: 30, height: 30 }} />
+          <img src="assets/logo-mark.svg" alt="" style={{ width: 30, height: 30 }} />
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '.16em', color: 'var(--amber-300)', marginTop: 4 }}>FELIX</span>
         </div>
       </div>
