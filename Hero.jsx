@@ -84,19 +84,19 @@ function Hero({ onNav }) {
       <div className="space-bg" />
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '88px 32px 84px', position: 'relative', display: 'grid', gridTemplateColumns: '1.02fr 0.98fr', gap: 48, alignItems: 'center' }} className="hero-grid">
         <div>
-          <Pill variant="amber">Deployed on-premise · Always on</Pill>
+          <Pill variant="amber">Custom-built for you · Always on</Pill>
           <h1 className="felix-display" style={{ fontSize: 60, margin: '22px 0 0' }}>
             Not automation.<br /><span className="felix-text-amber">A version of you</span> that never sleeps.
           </h1>
           <p className="felix-body-lg" style={{ marginTop: 22, maxWidth: 524 }}>
-            Felix is a custom AI operator that runs on a tiny device on your desk — triaging email, managing your calendar, researching, drafting, and chasing leads, so you can focus on the work only you can do.
+            Felix is your personal AI operator — custom-built for how you work, who you talk to, and what you need done. Not a chatbot with your logo. A dedicated system that handles your communication, research, writing, lead pipeline, content, ops coordination, and more — around the clock, on hardware you own.
           </p>
           <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
             <Button variant="primary" icon="arrow-right">{CTA_LABEL}</Button>
             <Button variant="secondary" icon="play" onClick={() => onNav('live')}>See it run</Button>
           </div>
           <div style={{ display: 'flex', gap: 26, marginTop: 38, flexWrap: 'wrap' }}>
-            {[['Runs on a', '$75 device'], ['A team of', '6+ agents'], ['Always', 'on · 24/7']].map(([a, b]) => (
+            {[['Fully', 'custom-built'], ['Your own', 'agent team'], ['Always', 'on · 24/7']].map(([a, b]) => (
               <div key={b}>
                 <div className="felix-small" style={{ fontSize: 12 }}>{a}</div>
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: 17, fontWeight: 600, color: 'var(--fg)', marginTop: 2 }}>{b}</div>
@@ -115,7 +115,7 @@ function TrustStrip() {
     <div style={{ borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)', background: 'var(--bg-1)' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '22px 32px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
         <span className="felix-label">Built for</span>
-        <span style={{ fontWeight: 600, fontSize: 16, color: 'var(--fg-dim)' }}>Service businesses · freelancers · small teams</span>
+        <span style={{ fontWeight: 600, fontSize: 16, color: 'var(--fg-dim)' }}>Founders · service businesses · small teams who want the leverage of a much larger operation</span>
       </div>
     </div>
   );

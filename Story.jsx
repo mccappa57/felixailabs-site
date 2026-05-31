@@ -5,16 +5,16 @@
 
 function Features() {
   const items = [
-    ['mail', 'var(--amber)', 'Triages your inbox', 'Sorts, drafts replies, and surfaces only the messages that actually need you.'],
-    ['calendar-check', 'var(--blue)', 'Runs your calendar', 'Schedules, reschedules, and protects your focus time without the back-and-forth.'],
-    ['search', 'var(--purple)', 'Researches anything', 'Pulls together the background, the options, and the answer before you ask twice.'],
-    ['pen-line', 'var(--green)', 'Writes & drafts', 'Proposals, posts, and follow-ups, written in your voice and ready to send.'],
-    ['list-checks', 'var(--amber)', 'Tracks the tasks', 'Captures to-dos from every thread and keeps the whole list moving.'],
-    ['shield-check', 'var(--green)', 'Runs locally', 'On a device on your desk. Your data never lives in someone else\u2019s cloud.'],
+    ['mail', 'var(--amber)', 'Owns your entire inbox', 'Reads, triages, drafts, and sends — in your voice. Flags only what genuinely needs your judgment. Everything else is handled without you touching it.'],
+    ['pen-line', 'var(--green)', 'Writes like you', 'Client proposals, follow-ups, cold outreach, content, legal summaries. Trained on how you actually communicate — indistinguishable from the real thing.'],
+    ['search', 'var(--purple)', 'Researches at depth', 'Competitor breakdowns, market analysis, lead backgrounds, contract reviews, industry summaries. Multi-source briefs delivered before you ask twice.'],
+    ['users', 'var(--blue)', 'Does the work of a full team', 'Lead qualification, task coordination, calendar management, Notion ops, meeting prep, follow-up sequences. The output of several roles — in one system, on one device.'],
+    ['cpu', 'var(--amber)', 'Built specifically for you', 'Not a template. Not a product. An operator engineered around your workflows, your clients, your voice, and your goals — then refined as it learns how you work.'],
+    ['shield-check', 'var(--green)', 'Fully yours, fully private', 'Runs on hardware you own. Your data, your conversations, your context — never stored in anyone else\'s cloud.'],
   ];
   return (
     <Section id="features">
-      <SectionHeader eyebrow="What Felix handles" eyebrowColor="var(--amber)" title="Your whole desk, run by a version of you." body="Built custom for how you actually work — not a generic bot with your logo on it." />
+      <SectionHeader eyebrow="What Felix handles" eyebrowColor="var(--amber)" title="Your whole operation, run by a version of you." body="Not a generic tool with your branding on it. A custom AI operator built around exactly how you work." />
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 18, marginTop: 44 }} className="feature-grid">
         {items.map((it, i) => <FeatureCard key={i} icon={it[0]} iconColor={it[1]} title={it[2]} body={it[3]} />)}
       </div>
@@ -24,10 +24,10 @@ function Features() {
 
 function HowItWorks() {
   const steps = [
-    ['phone', 'var(--amber)', 'Book a discovery call', 'We learn your business — the calls you get, the jobs you book, where leads slip through.'],
-    ['cpu', 'var(--blue)', 'We build your operator', 'A custom AI system, tuned to how you actually talk to customers and run your day.'],
-    ['package', 'var(--purple)', 'We ship the Pi', 'A pre-provisioned Raspberry Pi arrives ready to plug in. We manage it end to end.'],
-    ['zap', 'var(--green)', 'It goes to work', 'Live in about a week. Answering, booking, and following up — without you lifting a finger.'],
+    ['phone', 'var(--amber)', 'Discovery call', 'We learn your business — your workflows, your clients, where things fall through the cracks, and what good looks like for you.'],
+    ['cpu', 'var(--blue)', 'We build your operator', 'A custom AI system, tuned to your voice, your priorities, and the specific work you need handled every day.'],
+    ['package', 'var(--purple)', 'We ship the device', 'A pre-provisioned Raspberry Pi arrives ready to plug in. No IT setup. We provision, configure, and manage it end to end.'],
+    ['zap', 'var(--green)', 'It goes to work', 'Live in about a week. Handling communication, research, writing, ops, and more — while you focus on the work only you can do.'],
   ];
   return (
     <Section id="how" band>
@@ -60,12 +60,12 @@ function Vision() {
           <div style={{ padding: '56px 48px' }}>
             <Eyebrow color="var(--amber)">The vision</Eyebrow>
             <h2 className="felix-h2" style={{ marginTop: 18, fontSize: 34, maxWidth: 600 }}>
-              You didn’t start a business to live in your inbox.
+              The leverage of a full team. Built into one system, just for you.
             </h2>
             <div className="felix-body-lg" style={{ marginTop: 20, maxWidth: 560, display: 'flex', flexDirection: 'column', gap: 16 }}>
-              <p style={{ margin: 0 }}>Big companies have ops teams and assistants. The solo founder, the freelancer, the small team — they have themselves, and an inbox, a calendar, and a to-do list that never stops growing.</p>
-              <p style={{ margin: 0 }}>Felix exists to close that gap. Not with another app to check, and not by renting you a slice of someone else’s cloud — but with a team of agents that lives on a device you own and learns how you work: triaging email, managing your calendar, researching, drafting, and chasing leads, around the clock.</p>
-              <p style={{ margin: 0, color: 'var(--fg)' }}>The goal isn’t to replace you. It’s to give you a second one of you.</p>
+              <p style={{ margin: 0 }}>Every scaled company has an operations layer behind it. A chief of staff who manages the calendar. A researcher who preps every meeting. A writer who drafts every proposal. An SDR who chases every lead. A coordinator who keeps everything moving.</p>
+              <p style={{ margin: 0 }}>Felix is that entire layer — custom-engineered around your specific business. Not a generic AI with a few tools bolted on. A dedicated operator that understands how you work, who your clients are, and what good looks like in your world — and gets sharper every day.</p>
+              <p style={{ margin: 0, color: 'var(--fg)' }}>The goal isn't to save you a few hours. It's to give you the operating capacity of a company ten times your size.</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginTop: 28 }}>
               <div className="avatar-ph" style={{ width: 48, height: 48 }}><Icon name="user" size={22} color="var(--fg-muted)" /></div>

@@ -5,6 +5,7 @@
 const { useEffect, useState, useRef } = React;
 
 const CTA_LABEL = 'Book a Discovery Call';
+const CTA_HREF = 'mailto:nkaplan091@gmail.com?subject=Felix%20AI%20Labs%20%E2%80%94%20Discovery%20Call';
 
 // Lucide icon — renders the CDN SVG by name. Re-renders safely.
 function Icon({ name, size = 20, color = 'currentColor', strokeWidth = 1.75, style }) {
@@ -35,8 +36,9 @@ function Pill({ variant, children, dot }) {
 
 function Button({ variant = 'primary', size, children = CTA_LABEL, icon, onClick, href }) {
   const cls = `btn btn-${variant}${size === 'sm' ? ' btn-sm' : ''}`;
+  const resolvedHref = href || (children === CTA_LABEL ? CTA_HREF : undefined);
   const inner = <>{children}{icon && <Icon name={icon} size={16} />}</>;
-  if (href) return <a className={cls} href={href} onClick={onClick}>{inner}</a>;
+  if (resolvedHref) return <a className={cls} href={resolvedHref} onClick={onClick}>{inner}</a>;
   return <button className={cls} onClick={onClick}>{inner}</button>;
 }
 
@@ -76,4 +78,4 @@ function FeatureCard({ icon, iconColor, title, body, featured, badge }) {
   );
 }
 
-Object.assign(window, { CTA_LABEL, Icon, LiveDot, Pill, Button, Eyebrow, Section, SectionHeader, FeatureCard });
+Object.assign(window, { CTA_LABEL, CTA_HREF, Icon, LiveDot, Pill, Button, Eyebrow, Section, SectionHeader, FeatureCard });

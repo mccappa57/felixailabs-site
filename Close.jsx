@@ -102,8 +102,8 @@ function CTABand() {
       <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 'var(--r-lg)', border: '1px solid var(--border-amber)', background: 'var(--surface-1)', padding: '64px 48px', textAlign: 'center', boxShadow: 'var(--glow-amber)' }}>
         <div className="cta-glow" />
         <div style={{ position: 'relative' }}>
-          <h2 className="felix-h1" style={{ fontSize: 46, maxWidth: 720, margin: '0 auto' }}>Stop letting your inbox run your day.</h2>
-          <p className="felix-body-lg" style={{ marginTop: 18, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>We build your operator, ship the device, and it goes to work. Most shops are live within a week.</p>
+          <h2 className="felix-h1" style={{ fontSize: 46, maxWidth: 720, margin: '0 auto' }}>What used to take a team. Now it's just Felix.</h2>
+          <p className="felix-body-lg" style={{ marginTop: 18, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>Custom-built around your business — your voice, your workflows, your clients. We ship the device. You're live within a week.</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', marginTop: 32, flexWrap: 'wrap' }}>
             <Button variant="primary" icon="arrow-right">{CTA_LABEL}</Button>
           </div>
